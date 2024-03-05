@@ -79,6 +79,8 @@ nav {
 #mobile-warning {
     display: none;
 }
+
+
 @media (max-width: 600px) {
     #mobile-warning {
         margin: 0;
