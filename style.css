@@ -27,6 +27,7 @@ nav {
     align-items: center;
     border-bottom: 1px solid var(--border);
     padding: 0px 80px;
+    height: 60px;
 }
 #nav-buttons {
     display: flex;
@@ -78,6 +79,25 @@ nav {
 }
 #mobile-warning {
     display: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.box {
+    height: 100vh;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about {
+    height: calc(100vh - 60px);
+}
+#about-container {
+    display: flex;
+}
+#about-text {
+    width: 400px;
 }
 
 
