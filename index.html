@@ -1,92 +1,222 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jaxson O'Connor</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-
-        <link rel="icon" href="https://jaxsonoconnor09.github.io/image-repo/logo.png">
-    </head>
-    <body>
-        <nav>
-            <div id="nav-content">
-                <img id="logo" src="https://jaxsonoconnor09.github.io/image-repo/logo.png">
-                <p id="title">Jaxson O'Connor</p>
-                <div id="nav-buttons">
-                    <button id="home" class="nav-button" data-hover-tip data-hover-color="default" data-hover-text="Home" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})"><i class="fa-solid fa-house"></i></button>
-                    <button id="gallery" class="nav-button" data-hover-tip data-hover-color="default" data-hover-text="Gallery" onclick="document.querySelector('#gallery-container').scrollIntoView({behavior: 'smooth'})"><i class="fa-solid fa-camera"></i></button>
-                    <button id="youtube" class="nav-button" data-hover-tip data-hover-color="default" data-hover-text="YouTube"><i class="fa-brands fa-youtube" onclick="window.open('https://www.youtube.com/@jaxsyntax/videos')"></i></button>
-                    <button id="github" class="nav-button" data-hover-tip data-hover-color="default" data-hover-text="GitHub" onclick="window.open('https://github.com/jaxsonoconnor09')"><i class="fa-brands fa-github"></i></button>
-                    <button id="mail" class="nav-button" data-hover-tip data-hover-color="default" data-hover-text="Contact" onclick="window.open('mailto:jocon1028@westada.org')"><i class="fa-solid fa-envelope"></i></button>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaxson O'Connor</title>
+    <link rel="icon" href="https://jaxsonoconnor09.github.io/image-repo/logo.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <!-- <img id="logo" src="https://jaxsonoconnor09.github.io/image-repo/logo.png"> -->
+        <div id="logo" style="background: var(--accent); height: 40px; width: 40px; border-radius: 100%; display: flex; justify-content: center; align-items: center;">
+            <div style="position: absolute; background: #ededed; height: 20px; width: 20px; clip-path: polygon(0% 0%, 100% 0%, 100% 33%, 33% 33%, 33% 100%, 0% 100%, 0% 0%);">
+                
             </div>
-        </nav>
+            <div style="position: absolute; background: #101010; height: 20px; width: 20px; clip-path: polygon(66% 0%, 100% 0%, 100% 100%, 33% 100%, 0% 66%, 66% 66%, 66% 0%);">
 
-        <div class="box" id="about">
-            <div id="about-content">
-                <div id="about-text">
-                    <h1 id="about-header">Hey, I'm <span>Jaxson</span>.</h1>
-                    <p id="about-paragraph">I'm a front end web developer and intermedate software developer. My hobbies consist of: photography, coding, gaming.</p>
-                </div>
             </div>
-            <div id="portrait" data-hover-tip data-hover-color="none" data-hover-text="A self-portrait of myself"></div>
         </div>
+        <p aria-hidden id="title">Jaxson O'Connor</p>
+        <span id="nav-buttons">
+            <button aria-hidden onclick="document.querySelector('#about-container').scrollIntoView({behavior: 'smooth'});" id="home" hover-tip hover-text="Home"><i class="fa-regular fa-house"></i></button>
+            <button aria-hidden onclick="document.querySelector('#gallery-container').scrollIntoView({behavior: 'smooth'});" id="gallery" hover-tip hover-text="Gallery"><i class="fa-regular fa-photo-film"></i></button>
+            <button aria-hidden onclick="window.open('https://www.youtube.com/@jaxsyntax', '_blank')" id="youtube" hover-tip hover-text="YouTube"><i class="fa-brands fa-youtube"></i></button>
+            <button id="settings" hover-tip hover-text="Themes"><i class="fa-regular fa-moon-over-sun"></i></button>
+        </span>
+    </nav>
 
-        <div id="gallery-container">
-            <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0297.jpg" data-hover-tip data-hover-color="none" data-hover-tip data-hover-text="Click to view!">
-            <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0300.jpg" data-hover-tip data-hover-color="none" data-hover-tip data-hover-text="Click to view!">
-            <div class="landscape">
-                <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0353.jpg" data-hover-tip data-hover-color="none" data-hover-tip data-hover-text="Click to view!">
-                <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0403.jpg" data-hover-tip data-hover-color="none" data-hover-tip data-hover-text="Click to view!">
+    <div class="box" id="about-container">
+        <div id="about">
+            <div id="about-text">
+                <h1 id="about-header">Hey, I'm <span class="special">Jaxson</span>.</h1>
+                <p id="about-paragraph">I'm a web developer and intermediate software developer. I enjoy coding and photography.</p>
             </div>
-            <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0470.jpg" data-hover-tip data-hover-color="none" data-hover-tip data-hover-text="Click to view!">
-            <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0474.jpg" data-hover-tip data-hover-color="none" data-hover-tip data-hover-text="Click to view!">
-            <img src="https://jaxsonoconnor09.github.io/image-repo/LOC2_1.jpg" data-hover-tip data-hover-color="none" data-hover-tip data-hover-text="Click to view!">
+            <div id="portrait"></div>
         </div>
+    </div>
 
-        <div id="copyright">Copyright Jaxson O'Connor 2024. All Rights Reserved. Photography: CC NC-SA</div>
+    <div id="gallery-container">
+        <h2 style="text-align: center; width: 100%">My <span class="accent">Photography</span></h2>
+        <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0297.jpg" hover-tip hover-text="Click to view!">
+        <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0300.jpg" hover-tip hover-text="Click to view!">
+        <div class="landscape">
+            <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0353.jpg" hover-tip hover-text="Click to view!">
+            <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0403.jpg" hover-tip hover-text="Click to view!">
+        </div>
+        <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0470.jpg" hover-tip hover-text="Click to view!">
+        <img src="https://jaxsonoconnor09.github.io/image-repo/IMG_0474.jpg" hover-tip hover-text="Click to view!">
+        <img src="https://jaxsonoconnor09.github.io/image-repo/LOC2_1.jpg" hover-tip hover-text="Click to view!">
+    </div>
+
+    <h2 style="text-align: center">My <span class="accent">Videos</span></h2>
+    
+    <div id="videos" style="display: flex;
+    align-items: center; flex-direction: column;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qaEEpUVi56w?si=D2yVNAw0jGyGXXdv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jw-Qsr6SEPM?si=y-_MArxIH0WD7ZVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
-        <div id="hover-tip">Hover Tip</div>
-        
-        <script>
-            const hoverTip = document.getElementById("hover-tip");
-            
-            const elementWithHoverTip = document.querySelectorAll("[data-hover-tip]");
-            
-            elementWithHoverTip.forEach(elem => {
-                elem.addEventListener("mouseover", (e) => {
-                    const x = e.pageX;
-                    const y = e.pageY;
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mTocsLozpYU?si=4848F4mC2ic8Jg7j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 
-                    hoverTip.innerText = elem.getAttribute("data-hover-text");
+    <div id="copyright">Copyright Jaxson O'Connor 2024. All Rights Reserved. Photography: CC NC-SA</div>
+    
 
-                    hoverTip.style.opacity = "1";
-                    hoverTip.style.left = `${x+10}px`;
-                    hoverTip.style.top = `${y+10}px`;
+    <div id="htip">Hover Tip</div>
 
-                    if (!(elem.getAttribute("data-hover-color") == "none")) {
-                        if (elem.getAttribute("data-hover-color") == "default") {
-                            elem.style.background = "var(--hover)";
-                        }
-                        elem.style.background = elem.getAttribute("data-hover-color");
-                    }
-                });
-                elem.addEventListener("mouseout", (e) => {
-                    hoverTip.style.opacity = "0";
+    <div id="menu">
+        <button id="beach" hover-tip hover-text="Set theme to:">Beach</button>
+        <button id="muted" hover-tip hover-text="Set theme to:">Muted</button>
+        <button id="modern" hover-tip hover-text="Set theme to:">Modern</button>
+        <button id="husky" hover-tip hover-text="Set theme to:">Husky</button>
+        <button id="future" hover-tip hover-text="Set theme to:">Future</button>
+        <button id="cyberpunk" hover-tip hover-text="Set theme to:">Cyberpunk</button>
+        <button id="strawberry" hover-tip hover-text="Set theme to:">Strawberry</button>
+        <button id="pale-night" hover-tip hover-text="Set theme to:">Palenight</button>
+    </div>
 
-                    if (!(elem.getAttribute("data-hover-color") == "none")) {
-                        elem.style.background = "var(--panel)";
-                    }
-                });
+    <div id="error">
+        <h2 id="error-header">Warning</h2>
+        <p id="error-paragraph">Some images on this web page are not exported properly for the web.</p>
+    </div>
+
+    <script>
+        const htip = document.querySelector("#htip");
+        const root = document.querySelector(":root");
+
+        const styleBase = ["--text", "--background", "--primary", "--secondary", "--accent"];
+
+        const themes = {
+            "beach": [
+                "#130f0e",
+                "#f9f4f2",
+                "#c56a51",
+                "#e9a08b",
+                "#f27a58"
+            ],
+            "muted": [
+                "#121412",
+                "#f6f8f7",
+                "#779f80",
+                "#aacbb2",
+                "#83bd90"
+            ],
+            "modern": [
+                "#eae6f0",
+                "#0f0c14",
+                "#b4a4ca",
+                "#633a44",
+                "#a77768"
+            ],
+            "husky": [
+                "#E7ECEB",
+                "#111514",
+                "#AEBDBA",
+                "#475257",
+                "#88939F"
+            ],
+            "future": [
+                "#100e16",
+                "#FAFAFD",
+                "#6651c5",
+                "#a495e8",
+                "#6a4dea"
+            ],
+            "cyberpunk": [
+                "#d7fdd0",
+                "#021101",
+                "#87fa7b",
+                "#4107a8",
+                "#f619bf"
+            ],
+            "strawberry": [
+                "#e0e6f4",
+                "#090D19",
+                "#9fb3dc",
+                "#722a65",
+                "#bf517e"
+            ],
+            "pale-night": [
+                "#e6ebf4",
+                "#070a12",
+                "#9db0d8",
+                "#5c2c72",
+                "#c66cc6"
+            ]
+        }
+
+        function setTheme(theme) {
+            for (let i=0; i<styleBase.length; i++) {
+                root.style.setProperty(styleBase[i], themes[theme][i]);
+            }
+            localStorage.setItem("theme", theme);
+        }
+
+        let localTheme = localStorage.getItem("theme") || "future";
+
+        setTheme(localTheme);
+
+        document.querySelectorAll("#menu > button").forEach(themeButton => {
+            themeButton.addEventListener("click", () => {
+                setTheme(themeButton.getAttribute("id"));
+            })
+        });
+
+        document.querySelectorAll("[hover-tip]").forEach(elem => {
+            elem.addEventListener("mouseover", (e) => {
+                const x = e.pageX;
+                const y = e.pageY;
+
+                htip.innerText = elem.getAttribute("hover-text");
+
+                htip.style.opacity="1";
+
+                const htipWidth = htip.offsetWidth;
+
+                htip.style.left=`${x - (htipWidth/2)}px`;
+                htip.style.top=`${y - (htipWidth/2) + 60}px`;
+
+                
             });
+            elem.addEventListener("mouseout", (e) => {
+                htip.style.opacity = "0";
+            })
+        });
 
-            document.querySelectorAll("img:not(#logo)").forEach(img => {
-                img.addEventListener("click", () => {
-                    window.open(img.getAttribute("src"), "_blank");
-                });
+        let settingsShown = false;
+
+        const settings = document.querySelector("#settings");
+        const menu = document.querySelector("#menu");
+
+        settings.addEventListener("click", () => {
+            if (settingsShown) {
+                menu.style.right = "-150px";
+            } else {
+                menu.style.right = "15px";
+            }
+            settingsShown = !settingsShown;
+        });
+
+        document.querySelectorAll("#gallery-container > img, #gallery-container > div > img").forEach(img => {
+            img.addEventListener("click", () => {
+                window.open(img.getAttribute("src"), "_blank");
             });
-        </script>
-    </body>
+        });
+
+        setTimeout(() => {
+            document.querySelector("#error").style.right="-420px";
+        }, 7000);
+
+        document.querySelector("#logo").addEventListener("click", () => {
+            document.querySelectorAll("*").forEach(element => {
+                element.style.animation="spin 5s linear infinite";
+                element.style.scale="0.8";
+            });
+        });
+    </script>
+</body>
 </html>
