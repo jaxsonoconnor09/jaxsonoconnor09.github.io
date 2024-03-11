@@ -14,16 +14,15 @@
 	transition: .4s ease;
 } 
 body {
-  margin: 0;
-	padding: 0px var(--menu-padding);
-	overflow: hidden;
-  background-image: url("https://jaxsonoconnor09.github.io/image-repo/blossom.png");
+	background: gray;
+	font-family: "Poppins";
+	background-image: url("https://jaxsonoconnor09.github.io/image-repo/blossom.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-.App {
-	font-family: "Poppins";
 	color: var(--def-color);
+	margin: 0;
+	padding: 0px var(--menu-padding);
+	overflow: hidden;
 	display: flex;
 	align-items: center;
 	height: 100vh;
@@ -72,9 +71,6 @@ h2, p {
 	margin-left: 10px;
 	width: calc(100% - 10px - var(--side-menu-width));
 	height: calc(100% - 20px);
-  display: flex;
-	align-items: center;
-	justify-content: center;
 }
 #jaxweather {
 	background: var(--panel);
@@ -83,11 +79,19 @@ h2, p {
 	left: 14px;
 	bottom: 0;
 	width: calc(100% - 28px);
-	text-align: center;
+	/* text-align: center; */
 	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 input[type="file"] {
 	display: none;
+}
+#info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #weather-panel {
 	height: 500px;
@@ -96,4 +100,50 @@ input[type="file"] {
 	background: var(--menu);
 	border: 2px solid var(--border);
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0px;
+}
+#weather-panel > h2 {
+	font-weight: 300;
+}
+#weather-panel > h2 > span, #weather-panel > div > p > span, #weather-panel > span > p > span {
+	font-weight: 600;
+	color: var(--highlight); 
+}
+#weather-panel > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+#temp {
+	font-size: 60px;
+	font-weight: 600;
+	color: var(--highlight);
+}
+#weather-panel > img {
+	height: 50px;
+}
+#jaxweather > img {
+	height: 20px;
+	aspect-ratio: 1;
+	margin-right: 5px;
+}
+#desc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.weather-detail:not(#desc) {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 80%;
+	margin-bottom: 8px;
+}
+#desc-text {
+	font-size: 18px;
+	color: var(--semi-highlight);
 }
